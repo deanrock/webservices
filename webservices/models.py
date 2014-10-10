@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from itsdangerous import TimedSerializer, SignatureExpired, BadSignature
 from webservices.exceptions import BadRequest, WebserviceError
-import urlparse
+import six
 
 PUBLIC_KEY_HEADER = 'x-services-public-key'
 

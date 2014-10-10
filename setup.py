@@ -10,6 +10,7 @@ setup(
     platforms=['OS Independent'],
     install_requires=[
         'itsdangerous',
+        'six',
     ],
     extras_require = {
         'django':  ["django", "requests"],
