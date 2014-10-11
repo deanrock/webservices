@@ -2,6 +2,7 @@
 from itsdangerous import TimedSerializer, SignatureExpired, BadSignature
 from webservices.exceptions import BadRequest, WebserviceError
 import six
+import six.moves.urllib.parse as urlparse
 
 PUBLIC_KEY_HEADER = 'x-services-public-key'
 
